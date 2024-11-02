@@ -1,17 +1,20 @@
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../Styel/styel.css"
 const Header = () => {
     return (
         <div >
             <h1>NavBar</h1>
         
-           <div className="abc">
-           <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/user">User</Link>
-           </div>
+           <nav className="abc">
+            <NavLink to="/">Home</NavLink>
+                <NavLink  to="/about" className="ancor">About</NavLink>
+                
+                <NavLink to="/contact" className="ancor">Contact</NavLink>
+                <NavLink to="/user" className="ancor">User</NavLink>
+                <NavLink to="/post" className="ancor">Post</NavLink>
+
+           </nav>
            
         </div>
     );

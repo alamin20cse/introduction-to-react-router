@@ -46,4 +46,28 @@
 {
   margin-left: 5px;
 }
+.single
+{
+  background: #d34444;
+  border-radius: 15px;
+}
+.post
+{
+  background: #84ad23;
+  border-radius: 15px;
+}
+.usergrid
+{
+  display: grid; 
+  grid-template-columns: repeat(3,1fr);
+  gap: 5px;
+}
 
+nav a.active
+{
+ text-decoration: underline;
+ background: #2ee781;
+ border-radius: 15px;
+ padding-left: 15px;
+ padding-right: 15px;
+}
